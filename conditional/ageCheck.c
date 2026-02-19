@@ -1,6 +1,15 @@
+// Age Check
 #include<stdio.h>
 int main(){
-  printf("Hello World");
+    int age;
+    printf("Enter your age: ");
+    scanf("%d",&age);
 
-return 0;
+    if((age<0)||(age>100)||(age==0)){
+        printf("Invalid Age");
+    }
+
+    if((age>0)&&(age<100)){
+        printf("Your age is: %d",age);
+    }
 }

@@ -1,0 +1,22 @@
+// To check number is +,-,0
+#include<stdio.h>
+int main(){
+    int no;
+    printf("\n Enter a no: ");
+    scanf("%d",&no);
+
+    if (no>0)
+    {
+        printf("Number is positive");
+    }
+
+    else if (no<0)
+    {
+        printf("Number is Negative");
+    }
+
+   else{
+    printf("Number is zero");
+   }
+    
+}

@@ -1,0 +1,63 @@
+//7.  if student is pass in all subject then print result pass or fail
+//check grade and print A or B or C
+
+#include<stdio.h>
+int main(){
+
+   int rollno;
+   char sname[10];
+   int sub1,sub2,sub3,total;
+   float perct;
+   char grade;
+
+   printf("Enter Student Name: \n");
+   scanf("%s",sname);
+
+   printf("Enter Rollno: \n");
+   scanf("%d",&rollno);
+
+   printf("Enter marks of subject1:  \n");
+   scanf("%d",&sub1);
+
+   printf("Enter marks of subject2:  \n");
+   scanf("%d",&sub2);
+
+   printf("Enter marks of subject3:  \n");
+   scanf("%d",&sub3);
+
+   
+   total=sub1+sub2+sub3;
+   printf("Total marks of student is : %f \n",total);
+
+   perct=((float)total/300)*100;
+   printf("Percentage: %f \n",perct);
+
+   
+   if (perct>35)
+   {
+      printf("PASS \n");
+   }
+   else{
+      printf("FAIL \n");
+   }
+   
+
+   if (perct>85 && perct<100)
+   {
+      printf("A grade \n");
+   }
+   else if (perct>60 && perct<85)
+   {
+      printf("B Grade \n");
+   }
+   else if (perct>40 && perct<60)
+   {
+      printf("C grade \n");
+   }
+   
+   printf("\t Student name is: \n%s",sname);
+   printf("\t Rollno of student is: \n%d",rollno);
+   printf(perctange>=35?\t)
+   return 0;
+
+}

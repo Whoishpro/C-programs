@@ -1,0 +1,113 @@
+//menu driven program of addition multiplication subtraction divisio usinng switch 
+#include<stdio.h>
+int main(){
+    int ip,a,b;
+    menu:
+    printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit\n");
+    scanf("%d",&ip);
+
+    switch (ip)
+    {
+    case 1:{
+        printf("Enter 2 numbers to perform addtion: \n");
+        scanf("%d %d",&a,&b);
+        printf("Addition of 2 numbers is: %d\n",a+b);
+        break;
+    }
+    
+    case 2:{
+        printf("Enter 2 numbers to perform subtraction:  \n");
+        scanf("%d %d",&a,&b);
+        printf("Subtraction of 2 numbers is : %d\n",a-b);
+        break;
+    }
+
+    case 3:{
+        printf("Enter 2 numbers to perform Multiplication:  \n");
+        scanf("%d %d",&a,&b);
+        if (a<0 && b<0)
+        {
+           printf("Multiplocatio of 2 numbers is : %d\n",a*b);
+        }
+        else{
+            printf("Please enter Non-zero number\n");
+        }
+        
+        break;
+    }
+
+    case 4:{
+        printf("Enter 2 numbers to perform Division:  \n");
+        scanf("%d %d",&a,&b);
+        if (b>0)
+        {
+           printf("Divsion of 2 numbers is: %d\n",a/b);
+        }
+        else{
+            printf("Number 2 Shloud not be 0\n");
+        }
+        
+        break;
+    }
+
+    case 5:{
+        printf("ThankYou!!\n");
+        return 0;
+        break;
+
+    }
+    default:{
+        printf("Invalid input!\n");
+    }
+        break;
+    }
+    goto menu;
+    
+}
+
+Geomartic caluclator 
+1.Area of circle.   2.circumfernce of circle   3. Radius of circle
+4.Area of trinagle 5.side of trinagle 
+6.side of sq. 7area of sq.
+8.cal lenghth 9.cal breath  10.Area of rect  11.perimeter of rectangle
+
+#include<stdio.h>
+
+int main(){
+    int ip,r,c;
+    float pi=3.14;
+    menu:
+    printf("1.Area of circle\n2.Cirumfernce of circle\n3.radius of circle\n4.Exit\n");
+    scanf("%d",&ip);
+
+    switch (ip)
+    {
+    case 1:
+       printf("Enter radius of circle: ");
+       scanf("%d",&r);
+       printf("Area of circle is: %f\n",pi*r*r);
+        break;
+
+    case 2:
+    printf("Enter radius of circle: ");
+    scanf("%d",&r);
+    printf("Cirumfernce of circle is : %f\n",2*pi*r);
+    break;
+
+    case 3:
+    printf("Enter value of cirumfernce: ");
+    scanf("%d",&c);
+    printf("Radius of circle is: %f\n",c/2*pi);
+    break;
+    
+    case 4:
+    printf("Thankyou!!");
+    return 0;
+    
+    default:{
+        printf("Invalid ip");
+    }
+        break;
+    }
+    goto menu;
+}
